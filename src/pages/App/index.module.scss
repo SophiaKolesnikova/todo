@@ -1,0 +1,41 @@
+.todos {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  &__title {
+    font-weight: 200;
+    text-align: center;
+    color: #b2a49a;
+  }
+
+  &__action-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    @media screen and (min-width: 400px){
+      flex-direction: row;
+    }
+  }
+
+  &__clear {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: none;
+    font-size: 13px;
+    color: #4a4a4a;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: lightgray;
+    }
+  }
+}
